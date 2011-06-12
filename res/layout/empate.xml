@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+	<ImageView android:layout_height="wrap_content" 
+		android:src="@drawable/rage"
+		android:layout_width="wrap_content" 
+		android:id="@+id/imagem_empate"
+		android:layout_gravity="center">
+	</ImageView>
+	<TextView android:layout_height="wrap_content" 
+		android:id="@+id/textoEmpate"
+		android:text="Deu Véiiaaaa!!!" 
+		android:layout_width="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_gravity="center_horizontal">
+	</TextView>
+	<Button android:layout_height="wrap_content" 
+		android:text="Tentar de novo" 
+		android:id="@+id/retry_2" 
+		android:layout_width="wrap_content" 
+		android:layout_gravity="center_horizontal">
+	</Button>
+    
+</LinearLayout>

@@ -25,6 +25,7 @@ public class JogoDaVelhaActivity extends Activity {
 	private Button btnNovoJogo;
 	private int[] pontos;
 	private Button btnRetry;
+	private Button btnRetry2;
 	
 	@Override
     public void onCreate(Bundle savedInstanceState) {
@@ -92,19 +93,38 @@ public class JogoDaVelhaActivity extends Activity {
 					marcarPontoJogador(btn);
 					if(verificaGanhador(1))
 						jogador1Ganho();
-					
 				} else {
 					btn.setBackgroundResource(R.drawable.circulo);
 					marcarPontoJogador(btn);
 					if(verificaGanhador(2))
 						jogador2Ganho();
 				}
-				
-				
+				if (deuVelha()){
+					empate();
+				}
 				trocaJogador();
 				btn.setClickable(false);
 			}
+
 		};
+	}
+	
+	private void empate() {
+		setContentView(R.layout.empate);
+		btnRetry2 = (Button) findViewById(R.id.retry_2);
+		btnRetry2.setOnClickListener(retry());
+	}
+
+	
+	private boolean deuVelha() {
+		boolean retorno = true;
+		
+		for(int i=0;i<9;i++){
+			if(pontos[i]==0)
+				retorno = false;
+		}
+		
+		return retorno;
 	}
 	
 	private OnClickListener novoJogo(){
