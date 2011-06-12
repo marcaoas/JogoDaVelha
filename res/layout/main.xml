@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView
+		android:layout_height="wrap_content"
+		android:id="@+id/textView"
+		android:layout_marginBottom="20dp"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="wrap_content"
+		android:text="Jogador 1" />
+	<TableLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent">
+		<TableRow
+			android:gravity="center_horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<ImageButton
+				android:layout_height="wrap_content"
+				android:id="@+id/btn_1"
+				android:layout_width="wrap_content" android:background="@drawable/branco"/>
+			<ImageButton
+				android:background="@drawable/branco"
+				android:layout_height="wrap_content"
+				android:id="@+id/btn_2"
+				android:layout_width="wrap_content" />
+			<ImageButton
+				android:background="@drawable/branco"
+				android:layout_height="wrap_content"
+				android:id="@+id/btn_3"
+				android:layout_width="wrap_content" />
+		</TableRow>
+		<TableRow
+			android:gravity="center_horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<ImageButton
+				android:background="@drawable/branco"
+				android:layout_height="wrap_content"
+				android:id="@+id/btn_4"
+				android:layout_width="wrap_content" />
+			<ImageButton
+				android:background="@drawable/branco"
+				android:layout_height="wrap_content"
+				android:id="@+id/btn_5"
+				android:layout_width="wrap_content" />
+			<ImageButton
+				android:background="@drawable/branco"
+				android:layout_height="wrap_content"
+				android:id="@+id/btn_6"
+				android:layout_width="wrap_content" />
+		</TableRow>
+		<TableRow
+			android:gravity="center_horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<ImageButton
+				android:background="@drawable/branco"
+				android:layout_height="wrap_content"
+				android:id="@+id/btn_7"
+				android:layout_width="wrap_content" />
+			<ImageButton
+				android:background="@drawable/branco"
+				android:layout_height="wrap_content"
+				android:id="@+id/btn_8"
+				android:layout_width="wrap_content" />
+			<ImageButton
+				android:background="@drawable/branco"
+				android:layout_height="wrap_content"
+				android:id="@+id/btn_9"
+				android:layout_width="wrap_content" />
+		</TableRow>
+	</TableLayout>
+	<Button
+		android:layout_marginTop="20dp"
+		android:text="Novo Jogo"
+		android:id="@+id/novo_jogo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+</LinearLayout>
