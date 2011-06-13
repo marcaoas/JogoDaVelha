@@ -93,15 +93,19 @@ public class JogoDaVelhaActivity extends Activity {
 					marcarPontoJogador(btn);
 					if(verificaGanhador(1))
 						jogador1Ganho();
+					else if (deuVelha()){
+						empate();
+					}
 				} else {
 					btn.setBackgroundResource(R.drawable.circulo);
 					marcarPontoJogador(btn);
 					if(verificaGanhador(2))
 						jogador2Ganho();
+					else if (deuVelha()){
+						empate();
+					}
 				}
-				if (deuVelha()){
-					empate();
-				}
+				
 				trocaJogador();
 				btn.setClickable(false);
 			}
